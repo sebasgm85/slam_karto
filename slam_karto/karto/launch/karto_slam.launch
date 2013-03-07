@@ -1,0 +1,26 @@
+<launch>
+
+  <arg name="kinect_start" default="false"/>
+  <arg name="odom_topic" default="odom"/>
+  <arg name="scan_topic" default="scan"/>
+  
+  <node pkg="karto" type="slam_karto" name="slam_karto" output="screen">
+    <remap from="scan" to="$(arg scan_topic)"/>          <!-- if you are not using turtlebot try with base_scan -->
+    <param name="odom_frame" value="$(arg odom_topic)"/> <!-- if you are not using turtlebot try with odom_combined -->
+    <param name="map_update_interval" value="25"/>
+    <param name="resolution" value="0.025"/>
+  </node>
+  
+  <group if="$(arg kinect_start)">
+    <include file="$(find turtlebot_bringup)/launch/3dsensor.launch">
+      <arg name="rgb_processing" value="false" />
+      <arg name="depth_registration" value="false" />
+      <arg name="depth_processing" value="false" />
+    </include>
+  </group>
+
+  <!-- This files set severals parameters for turtlebot. But need to be test -->  
+  <!-- <include file="$(find karto)/launch/_karto.launch"/> -->  <!-- WARNING: If you use this file, comment the all the node launch at the beginning of this file -->
+  <!-- <include file="$(find karto)/launch/_move_base.launch"/> -->
+
+</launch>
