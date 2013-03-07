@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/build/devel/setup.sh

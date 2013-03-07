@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/data/svn/g2o/!svn/ver/30/trunk
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/data/svn/g2o/!svn/ver/19/trunk/README.txt
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/data/svn/g2o/!svn/ver/19/trunk/CMakeLists.txt
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/data/svn/g2o/!svn/ver/19/trunk/config.h.in
+END

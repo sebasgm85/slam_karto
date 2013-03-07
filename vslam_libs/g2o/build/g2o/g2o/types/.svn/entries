@@ -1,0 +1,77 @@
+10
+
+dir
+30
+https://svn.openslam.org/data/svn/g2o/trunk/g2o/types
+https://svn.openslam.org/data/svn/g2o
+
+
+
+2012-06-13T14:25:12.515553Z
+27
+kuemmerle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f103317e-6d9d-0410-8741-9b77ce750e62
+
+slam2d
+dir
+
+slam3d
+dir
+
+sba
+dir
+
+icp
+dir
+
+sim3
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2013-03-06T19:57:56.118275Z
+fee6206344200cbb95f4cb9cadbc6c01
+2011-04-11T10:01:11.054562Z
+6
+kuemmerle
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+136
+

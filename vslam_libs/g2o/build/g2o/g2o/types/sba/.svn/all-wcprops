@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/data/svn/g2o/!svn/ver/23/trunk/g2o/types/sba
+END
+types_sba.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/data/svn/g2o/!svn/ver/6/trunk/g2o/types/sba/types_sba.cpp
+END
+types_six_dof_expmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/data/svn/g2o/!svn/ver/6/trunk/g2o/types/sba/types_six_dof_expmap.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/data/svn/g2o/!svn/ver/6/trunk/g2o/types/sba/CMakeLists.txt
+END
+types_sba.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/data/svn/g2o/!svn/ver/23/trunk/g2o/types/sba/types_sba.h
+END
+types_six_dof_expmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/data/svn/g2o/!svn/ver/23/trunk/g2o/types/sba/types_six_dof_expmap.h
+END

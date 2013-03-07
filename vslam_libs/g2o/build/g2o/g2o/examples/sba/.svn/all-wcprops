@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/data/svn/g2o/!svn/ver/19/trunk/g2o/examples/sba
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/data/svn/g2o/!svn/ver/19/trunk/g2o/examples/sba/CMakeLists.txt
+END
+sba_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/data/svn/g2o/!svn/ver/6/trunk/g2o/examples/sba/sba_demo.cpp
+END

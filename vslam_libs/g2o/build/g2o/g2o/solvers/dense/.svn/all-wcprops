@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/data/svn/g2o/!svn/ver/23/trunk/g2o/solvers/dense
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/data/svn/g2o/!svn/ver/6/trunk/g2o/solvers/dense/CMakeLists.txt
+END
+linear_solver_dense.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/data/svn/g2o/!svn/ver/23/trunk/g2o/solvers/dense/linear_solver_dense.h
+END
+solver_dense.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/data/svn/g2o/!svn/ver/6/trunk/g2o/solvers/dense/solver_dense.cpp
+END

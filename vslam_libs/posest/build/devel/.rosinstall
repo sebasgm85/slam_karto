@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sebasgm/ros_devel/src/slam_karto/vslam_libs/posest/build/devel/setup.sh

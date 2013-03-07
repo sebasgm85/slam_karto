@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/g2o/build/g2o/g2o/stuff/os_specific.c
+os_specific.h
+/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/g2o/build/g2o/g2o/stuff/os_specific.h
+
+/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/g2o/build/g2o/g2o/stuff/os_specific.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+sys/time.h
+-
+sys/time.h
+-
+

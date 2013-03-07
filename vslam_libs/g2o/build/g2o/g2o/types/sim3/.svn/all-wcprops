@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/data/svn/g2o/!svn/ver/23/trunk/g2o/types/sim3
+END
+types_seven_dof_expmap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/data/svn/g2o/!svn/ver/6/trunk/g2o/types/sim3/types_seven_dof_expmap.cpp
+END
+types_seven_dof_expmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/data/svn/g2o/!svn/ver/23/trunk/g2o/types/sim3/types_seven_dof_expmap.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/data/svn/g2o/!svn/ver/6/trunk/g2o/types/sim3/CMakeLists.txt
+END

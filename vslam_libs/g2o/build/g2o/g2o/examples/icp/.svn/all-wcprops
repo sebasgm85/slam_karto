@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/data/svn/g2o/!svn/ver/19/trunk/g2o/examples/icp
+END
+gicp-test1.dat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/data/svn/g2o/!svn/ver/3/trunk/g2o/examples/icp/gicp-test1.dat
+END
+gicp_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/data/svn/g2o/!svn/ver/6/trunk/g2o/examples/icp/gicp_demo.cpp
+END
+gicp_sba_demo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/data/svn/g2o/!svn/ver/6/trunk/g2o/examples/icp/gicp_sba_demo.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/data/svn/g2o/!svn/ver/19/trunk/g2o/examples/icp/CMakeLists.txt
+END

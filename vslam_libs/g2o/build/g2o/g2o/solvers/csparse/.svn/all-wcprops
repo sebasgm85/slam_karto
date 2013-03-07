@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/data/svn/g2o/!svn/ver/23/trunk/g2o/solvers/csparse
+END
+csparse_helper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/data/svn/g2o/!svn/ver/6/trunk/g2o/solvers/csparse/csparse_helper.cpp
+END
+csparse_helper.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/data/svn/g2o/!svn/ver/23/trunk/g2o/solvers/csparse/csparse_helper.h
+END
+linear_solver_csparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/data/svn/g2o/!svn/ver/23/trunk/g2o/solvers/csparse/linear_solver_csparse.h
+END
+solver_csparse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/data/svn/g2o/!svn/ver/6/trunk/g2o/solvers/csparse/solver_csparse.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/data/svn/g2o/!svn/ver/11/trunk/g2o/solvers/csparse/CMakeLists.txt
+END

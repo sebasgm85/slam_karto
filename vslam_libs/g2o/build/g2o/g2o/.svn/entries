@@ -1,0 +1,89 @@
+10
+
+dir
+30
+https://svn.openslam.org/data/svn/g2o/trunk/g2o
+https://svn.openslam.org/data/svn/g2o
+
+
+
+2012-09-06T10:32:54.988372Z
+30
+kuemmerle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f103317e-6d9d-0410-8741-9b77ce750e62
+
+examples
+dir
+
+apps
+dir
+
+types
+dir
+
+doc
+dir
+
+tutorials
+dir
+
+stuff
+dir
+
+core
+dir
+
+math_groups
+dir
+
+solvers
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2013-03-06T19:58:09.714148Z
+93e6f9ab66e87e21c121a013c669e68f
+2011-04-11T10:01:11.054562Z
+6
+kuemmerle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+353
+

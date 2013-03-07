@@ -1,0 +1,9 @@
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/source/OpenKarto/Karto.cpp
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/source/OpenKarto/Mapper.cpp
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/lib/libOpenKarto.a
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/lib/libOpenKarto.so
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/include/karto/Karto.h
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/include/karto/Macros.h
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/include/karto/Mapper.h
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/include/karto/Math.h
+/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/karto/include/karto/Types.h
