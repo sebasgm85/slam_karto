@@ -11,12 +11,6 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 # The C and CXX include file search paths:
 SET(CMAKE_C_INCLUDE_PATH
   "/home/sebasgm/ros_devel/src/slam_karto/slam_karto/karto/include"
-  "/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/sba/include"
-  "/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/sba/msg/cpp"
-  "/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/sba/msg_gen/cpp/include"
-  "/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/bpcg/include"
-  "/home/sebasgm/ros_devel/src/slam_karto/vslam_libs/bpcg/msg/cpp"
-  "/opt/ros/groovy/include"
   "/usr/src/gtest/include"
   "/usr/src/gtest"
   )

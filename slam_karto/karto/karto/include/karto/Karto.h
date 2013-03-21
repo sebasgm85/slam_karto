@@ -3681,7 +3681,11 @@ namespace karto
      */
     inline kt_double GetAngularResolution() const
     {
-      return m_pAngularResolution->GetValue();
+       return m_pAngularResolution->GetValue();   
+       // return 0.017502; //Neato for the rosbag file from WG sebasgm
+      //  return 0.00158295; //TTB2 sebasgm
+      //   return 0.0015854; //TTB2 sebasgm,
+      //return 0.00436736317351; //bag file basic_stage sebasgm
     }
     
     /**
@@ -3839,6 +3843,8 @@ namespace karto
         {
           pLrf = new LaserRangeFinder((rName.GetName() != "") ? rName : Name("Sick LMS 291"));
 
+    std::cout << "I'm here as Sick_LMS291" << std::endl; //sebasgm
+
           // Sensing range is 80 meters
           pLrf->m_pMinimumRange->SetValue(0.0);
           pLrf->m_pMaximumRange->SetValue(80.0);
@@ -3859,6 +3865,8 @@ namespace karto
         case LaserRangeFinder_Hokuyo_UTM_30LX:
         {
           pLrf = new LaserRangeFinder((rName.GetName() != "") ? rName : Name("Hokuyo UTM-30LX"));
+
+    std::cout << "I'm here as hoyuko30" << std::endl; //sebasgm
 
           // Sensing range is 30 meters
           pLrf->m_pMinimumRange->SetValue(0.1);
@@ -3881,6 +3889,8 @@ namespace karto
         {
           pLrf = new LaserRangeFinder((rName.GetName() != "") ? rName : Name("Hokuyo URG-04LX"));
 
+       std::cout << "I'm here as hoyuko04" << std::endl; //sebasgm
+
           // Sensing range is 4 meters. It has detection problems when scanning absorptive surfaces (such as black trimming). 
           pLrf->m_pMinimumRange->SetValue(0.02);
           pLrf->m_pMaximumRange->SetValue(4.0);
@@ -3899,19 +3909,22 @@ namespace karto
         case LaserRangeFinder_Custom:
         {
           pLrf = new LaserRangeFinder((rName.GetName() != "") ? rName : Name("User-Defined LaserRangeFinder"));
+          
+        std::cout << "I'm here as custom" << std::endl;   //sebasgm
 
           // Sensing range is 80 meters.
           pLrf->m_pMinimumRange->SetValue(0.0);
           pLrf->m_pMaximumRange->SetValue(80.0);
 
           // 180 degree range
-          pLrf->m_pMinimumAngle->SetValue(math::DegreesToRadians(-90)); 
-          pLrf->m_pMaximumAngle->SetValue(math::DegreesToRadians(90));
+          pLrf->m_pMinimumAngle->SetValue(math::DegreesToRadians(-90.0)); 
+          pLrf->m_pMaximumAngle->SetValue(math::DegreesToRadians(90.0));  
 
           // 1.0 degree angular resolution
-          pLrf->m_pAngularResolution->SetValue(math::DegreesToRadians(1.0));
-
+          pLrf->m_pAngularResolution->SetValue(math::DegreesToRadians(1.0));  //1.0 sebasgm
           pLrf->m_NumberOfRangeReadings = 181;
+          
+      std::cout << "Initial number of readings" <<  pLrf->m_NumberOfRangeReadings << std::endl;  //sebasgm
         }
         break;
       }
@@ -3959,7 +3972,8 @@ namespace karto
      */
     void Update()
     {
-      m_NumberOfRangeReadings = static_cast<kt_int32u>(math::Round((GetMaximumAngle() - GetMinimumAngle()) / GetAngularResolution()) + 1);
+      //if()  
+      m_NumberOfRangeReadings = static_cast<kt_int32u>(math::Round((GetMaximumAngle() - GetMinimumAngle()) / GetAngularResolution())); // + 1 //sebasgm
     }
 
   private:

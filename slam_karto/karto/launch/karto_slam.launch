@@ -21,6 +21,8 @@
 
   <!-- This files set severals parameters for turtlebot. But need to be test -->  
   <!-- <include file="$(find karto)/launch/_karto.launch"/> -->  <!-- WARNING: If you use this file, comment the all the node launch at the beginning of this file -->
-  <include file="$(find karto)/launch/_move_base.launch"/> 
+  <!-- <include file="$(find karto)/launch/_move_base.launch"/> -->
+  <!-- <include file="$(find karto)/config/move_base.xml"/> -->
+
 
 </launch>
