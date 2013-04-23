@@ -151,8 +151,6 @@ SlamKarto::SlamKarto() :
   scan_filter_->registerCallback(boost::bind(&SlamKarto::laserCallback, this, _1));
   marker_publisher_ = node_.advertise<visualization_msgs::MarkerArray>("visualization_marker_array",1);
 
-            std::cout << "call lasercallback" << std::endl; //sebasgm
-
   // Create a thread to periodically publish the latest map->odom
   // transform; it needs to go out regularly, uninterrupted by potentially
   // long periods of computation in our main loop.
@@ -301,7 +299,6 @@ SlamKarto::getLaser(const sensor_msgs::LaserScan::ConstPtr& scan)
 bool
 SlamKarto::getOdomPose(karto::Pose2& karto_pose, const ros::Time& t)
 {
-             std::cout << "get odom" << std::endl; //sebasgm
   // Get the robot's pose
   tf::Stamped<tf::Pose> ident (tf::Transform(tf::createQuaternionFromRPY(0,0,0),
                                            tf::Vector3(0,0,0)), t, base_frame_);
@@ -411,7 +408,6 @@ SlamKarto::laserCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
   laser_count_++;
   if ((laser_count_ % throttle_scans_) != 0)
     return;
-         std::cout << "laser callback" << std::endl; //sebasgm
   static ros::Time last_map_update(0,0);
 
   // Check whether we know about this laser yet
@@ -441,10 +437,13 @@ SlamKarto::laserCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
       {
         last_map_update = scan->header.stamp;
         got_map_ = true;
-         std::cout << "map update map" << std::endl; //sebasgm
         ROS_DEBUG("Updated the map");
       }
     }
+  }
+  else
+  {
+    ROS_DEBUG("Scan skipped.");
   }
 }
 
@@ -457,7 +456,6 @@ SlamKarto::updateMap()
           karto::OccupancyGrid::CreateFromScans(mapper_->GetAllProcessedScans(), resolution_);
 
   if(!occ_grid){
-    std::cout << "map not published" << std::endl; //sebasgm
     return false;
   }
 
@@ -521,7 +519,7 @@ SlamKarto::updateMap()
   sst_.publish(map_.map);
   sstm_.publish(map_.map.info);
 
-  std::cout << "map published" << std::endl; //sebasgm
+  ROS_DEBUG("Map published");
 
   delete occ_grid;
 
@@ -618,7 +616,6 @@ main(int argc, char** argv)
   ros::init(argc, argv, "slam_karto");
 
   SlamKarto kn;
-            std::cout << "general_loop" << std::endl; //sebasgm
   ros::spin();
 
   return 0;
