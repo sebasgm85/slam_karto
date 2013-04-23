@@ -3,7 +3,7 @@ all: installed
 SVN_DIR = build/karto-svn
 SVN_URL = https://code.ros.org/svn/karto/trunk
 SVN_PATCH = karto.patch
-SVN_REVISION = -r 23
+SVN_REVISION = -r 24
 include $(shell rospack find mk)/svn_checkout.mk
 
 CMAKE = cmake 
