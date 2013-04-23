@@ -1,0 +1,5 @@
+bin/
+build/
+lib/
+srv_gen/
+src/sba/srv/_*.py
