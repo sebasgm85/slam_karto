@@ -17,6 +17,8 @@
   <depend package="nav_msgs"/>
   <depend package="message_filters"/>
   <depend package="sba"/>
+  <depend package="rosbag"/>
+  <depend package="laser_proc"/>
 
   <rosdep name="eigen"/>
 

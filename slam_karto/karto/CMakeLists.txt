@@ -20,3 +20,6 @@ include_directories(${PROJECT_SOURCE_DIR}/karto/include)
 link_directories(${PROJECT_SOURCE_DIR}/karto/lib)
 rosbuild_add_executable(bin/slam_karto src/slam_karto.cpp src/spa_solver.cpp)
 target_link_libraries(bin/slam_karto OpenKarto)
+
+rosbuild_add_executable(bin/slam_karto_offline src/slam_karto_offline.cpp src/spa_solver.cpp)
+target_link_libraries(bin/slam_karto_offline OpenKarto)
