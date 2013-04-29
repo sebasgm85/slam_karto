@@ -40,6 +40,7 @@
 #include "karto/Mapper.h"
 
 #include "spa_solver.h"
+#include "g2o_solver.h"
 
 #include "bag_processor.h"
 
@@ -820,7 +821,7 @@ private:
  
 
   karto::Mapper mapper_;
-  SpaSolver solver_;
+  G2OSolver solver_;
   karto::Dataset dataset_;
 
   boost::shared_ptr<tf::Transformer> transformer_;
